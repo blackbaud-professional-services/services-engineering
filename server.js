@@ -1798,7 +1798,7 @@ var _renderDocument2 = _interopRequireDefault(_renderDocument);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var store = (0, _store.configureStore)();
-var basepath = '';
+var basepath = '/services-engineering/';
 
 exports.default = function (_ref) {
   var assets = _ref.assets;
