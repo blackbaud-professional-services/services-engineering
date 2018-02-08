@@ -1429,8 +1429,8 @@ var Components = function Components() {
         'These are used to connect sections of our UI to our store, and we will cover this in more detail in our ',
         _react2.default.createElement(
           _reactRouter.Link,
-          { to: '/store' },
-          'Store'
+          { to: '/state' },
+          'State'
         ),
         ' section.'
       ),
@@ -3219,7 +3219,7 @@ var State = function State() {
           { href: 'https://github.com/reactjs/redux' },
           'Redux'
         ),
-        ' for application state management, when our application state starts to spread and becomes harder to manage. Redux manages the state (data) of our application in a single immutable source. It is important to understand the concepts of how we access and manipulate this state, and to understand that Redux is a simple concept at it\'s core.'
+        ' for application state management, when our application state starts to spread and becomes harder to manage, as opposed to just storing app state in stateful components. Redux manages the state (data) of our application in a single immutable source. It is important to understand the concepts of how we access and manipulate this state, and to understand that Redux is a simple concept at it\'s core.'
       ),
       _react2.default.createElement(
         'h3',
