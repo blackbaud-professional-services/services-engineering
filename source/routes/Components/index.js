@@ -49,7 +49,7 @@ const Components = () => {
         </ul>
         <h3>Connected Components</h3>
         <p>These are components that connect to your Redux store. This can allow a component to receive up-to-date data from the store, and can also prepare our action creators to be able to dispatch actions.</p>
-        <p>These are used to connect sections of our UI to our store, and we will cover this in more detail in our <Link to='/store'>Store</Link> section.</p>
+        <p>These are used to connect sections of our UI to our store, and we will cover this in more detail in our <Link to='/state'>State</Link> section.</p>
         <CodeBlock type='javascript'>{snippets.connectedComponent}</CodeBlock>
         <h5>Use Case</h5>
         <ul>
