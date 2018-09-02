@@ -1,5 +1,6 @@
 import React from 'react'
 import cxsync from 'cxsync'
+import favicon from './favicon.png'
 
 const renderStyles = (styles) => (
   styles.map((style, index) => <link key={index} rel='stylesheet' href={style} />)
@@ -24,7 +25,7 @@ export default ({
       {head.title.toComponent()}
       {head.meta.toComponent()}
       {renderStyles(styles)}
-      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,900' rel='stylesheet' />
+      <link rel='icon' type='image/png' href={favicon} />
       <style dangerouslySetInnerHTML={{ __html: cxsync.css || '' }} />
       <script dangerouslySetInnerHTML={{
         __html: `

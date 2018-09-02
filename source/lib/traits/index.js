@@ -1,34 +1,33 @@
-export const rhythm = (value = 1, unit = 'rem', basis = 1.5) => (
-  `${basis * value}${unit}`
-)
-
-export const scale = (exponent = 0, scale = 1.2) => (
-  `${Math.pow(scale, exponent)}rem`
-)
-
-export const transitions = {
-  easeOut: 'ease-out .25s'
-}
-
 export const fonts = {
-  head: 'Montserrat, Arial, sans-serif',
-  body: 'Montserrat, Arial, sans-serif'
+  head: '"helvetica neue", arial, sans-serif',
+  body: '"helvetica neue", arial, sans-serif',
+  code: 'monaco, Consolas, "Lucida Console", monospace'
 }
 
 export const treatments = {
   head: {
     fontFamily: fonts.head,
-    fontWeight: 900
+    fontWeight: 400,
+    lineHeight: 1.5,
+    WebkitFontSmoothing: 'antialiased'
   },
   body: {
-    fontFamily: fonts.body
+    fontFamily: fonts.body,
+    fontWeight: 500,
+    lineHeight: 1.5,
+    WebkitFontSmoothing: 'antialiased'
+  },
+  code: {
+    fontFamily: fonts.code
   }
 }
 
 export const colors = {
-  primary: '#8BBF47',
-  light: '#FFF',
-  dark: '#444',
-  shade: '#F4F4F4',
-  highlight: '#E7F2D9'
+  primary: '#333',
+  secondary: '#444',
+  tertiary: '#555',
+  light: '#fdfdfd',
+  dark: '#282828',
+  lightGrey: '#f5f5f5',
+  highlight: '#eee'
 }

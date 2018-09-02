@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const ContentRoute = () => {
   return (
     <div>
       <Helmet title='Content | Services Engineering' />
-      <SectionTitle size={5}>Content</SectionTitle>
       <Content>
         <h3>Prismic</h3>
         <p><a href='https://prismic.io'>Prismic</a> is a a hosted CMS service that allows us, and clients, to manage content for sites. Prismic has a few concepts worth understanding.</p>

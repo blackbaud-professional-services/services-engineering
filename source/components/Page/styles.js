@@ -4,23 +4,24 @@ export default (props, {
   treatments
 }) => ({
   root: {
-    display: 'flex',
-    alignItems: 'stretch',
-    justifyContent: 'flex-start',
-    minHeight: '100vh',
+    paddingTop: rhythm(2),
     color: colors.dark,
     ...treatments.body
   },
 
-  sidebar: {
-    flex: `0 0 ${rhythm(10)}`,
-    padding: `${rhythm(2)} ${rhythm(1)}`,
-    backgroundColor: colors.shade
+  intro: {
+    padding: `${rhythm(4)} ${rhythm(1)}`,
+    margin: '0 auto',
+    maxWidth: rhythm(40)
   },
 
   content: {
-    flex: 1,
-    padding: rhythm(2),
+    padding: `${rhythm(2)} ${rhythm(1)}`,
+    margin: '0 auto',
     maxWidth: rhythm(40)
+  },
+
+  contentInner: {
+    maxWidth: rhythm(26)
   }
 })

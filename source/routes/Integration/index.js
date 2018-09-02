@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const Integration = () => {
   return (
     <div>
       <Helmet title='Integration | Services Engineering' />
-      <SectionTitle size={5}>Integration</SectionTitle>
       <Content>
         <p>Our apps will almost always involve some sort of integration with either the Everydayhero or JustGiving platforms, which can range from a simple link to a registration form, to fetching and displaying leaderboard data, to custom registration flows that leveraging the relevant API.</p>
         <h3>Supporticon</h3>

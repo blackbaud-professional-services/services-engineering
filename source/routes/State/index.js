@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const State = () => {
   return (
     <div>
       <Helmet title='State | Services Engineering' />
-      <SectionTitle size={5}>State</SectionTitle>
       <Content>
         <h3>Redux</h3>
         <p>We use <a href='https://github.com/reactjs/redux'>Redux</a> for application state management, when our application state starts to spread and becomes harder to manage, as opposed to just storing app state in stateful components. Redux manages the state (data) of our application in a single immutable source. It is important to understand the concepts of how we access and manipulate this state, and to understand that Redux is a simple concept at it's core.</p>

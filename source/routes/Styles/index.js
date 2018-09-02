@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const Styles = () => {
   return (
     <div>
       <Helmet title='Styles | Services Engineering' />
-      <SectionTitle size={5}>Styles</SectionTitle>
       <Content>
         <h3>Reset</h3>
         <p>It is always good practice to apply a reset styles to allow us to keep most of our styling in the relevant components. We are currently using <a href='https://github.com/lukebrooker/minimal.css'>minimal.css</a> as our reset.</p>

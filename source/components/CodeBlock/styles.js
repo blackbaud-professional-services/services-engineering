@@ -3,16 +3,18 @@ export default ({
 }, {
   colors,
   rhythm,
-  scale
+  scale,
+  treatments
 }) => ({
   root: {
     position: 'relative',
-    marginTop: type && rhythm(0.5),
-    marginBottom: rhythm(1),
+    marginTop: rhythm(type ? 2.5 : 2),
+    marginBottom: rhythm(2),
     padding: `${rhythm(0.5)} ${rhythm(1)}`,
-    backgroundColor: colors.shade,
+    backgroundColor: colors.lightGrey,
     fontSize: scale(-1),
-    lineHeight: 1.75
+    lineHeight: 1.75,
+    ...treatments.code
   },
 
   type: {
@@ -20,7 +22,7 @@ export default ({
     bottom: '100%',
     right: 0,
     padding: `${rhythm(0.25)} ${rhythm(0.5)}`,
-    backgroundColor: colors.shade,
+    backgroundColor: colors.lightGrey,
     fontSize: scale(-2)
   }
 })

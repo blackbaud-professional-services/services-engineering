@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -21,7 +20,6 @@ const Deploy = () => {
   return (
     <div>
       <Helmet title='Build | Services Engineering' />
-      <SectionTitle size={5}>Build</SectionTitle>
       <Content>
         <h3>Targets</h3>
         <p>Boiler Room Builder has a deploy script that works with 3 different targets.</p>

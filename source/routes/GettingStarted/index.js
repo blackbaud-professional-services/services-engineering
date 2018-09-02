@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const GettingStarted = () => {
   return (
     <div>
       <Helmet title='Getting Started | Services Engineering' />
-      <SectionTitle size={5}>Getting Started</SectionTitle>
       <Content>
         <h3>Bootstrapping</h3>
         <p><a href='https://github.com/everydayhero/boilermaker'>Boilermaker</a> is an internal tool for quickly bootstrapping new projects. Installing and running Boilermaker to setup all your boilerplate is as simple as running the below commands and following the prompts.</p>

@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const Build = () => {
   return (
     <div>
       <Helmet title='Build | Services Engineering' />
-      <SectionTitle size={5}>Build</SectionTitle>
       <Content>
         <h3>Build</h3>
         <p>The aim of the build step is to transpile our JavaScript and bundle our assets into the dist folder ready for deployment. As we are creating isomorphic JavaScript apps, the output of our build will contain the following.</p>

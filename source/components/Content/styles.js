@@ -1,25 +1,33 @@
-export default (props, {
+export default ({
+  maxWidth
+}, {
   colors,
   rhythm,
-  transitions
+  treatments
 }) => ({
   root: {
+    maxWidth: maxWidth && rhythm(maxWidth),
+
     h1: { padding: `${rhythm(2)} 0 ${rhythm(1)}` },
-    h2: { padding: `${rhythm(2)} 0 ${rhythm(1)}` },
-    h3: { padding: `${rhythm(2)} 0 ${rhythm(1)}` },
+    h2: { ...treatments.body, padding: `${rhythm(2)} 0 ${rhythm(1)}` },
+    h3: { ...treatments.body, padding: `${rhythm(2)} 0 ${rhythm(1)}` },
+    h4: { ...treatments.body },
+    h5: { ...treatments.body },
+    h6: { ...treatments.body },
 
     a: {
-      opacity: 0.75,
-      borderBottom: `2px solid ${colors.primary}`,
-      transition: transitions.easeOut,
-
-      ':hover': {
-        opacity: 1
-      }
+      borderBottom: `2px solid ${colors.dark}`
     },
 
     '.highlight': {
+      display: 'inline-block',
+      margin: rhythm(-0.125),
+      padding: rhythm(0.125),
       backgroundColor: colors.highlight
+    },
+
+    '> :first-child': {
+      paddingTop: 0
     }
   }
 })

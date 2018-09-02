@@ -6,7 +6,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -23,7 +22,6 @@ const Components = () => {
   return (
     <div>
       <Helmet title='Components | Services Engineering' />
-      <SectionTitle size={5}>Components</SectionTitle>
       <Content>
         <p>Components describe a discrete portion of the UI, by colocating all the requirements in a single place, including behaviour, logic, styles, images, tests etc. This allows us to compose our UI from modular, and potentially reusable, components.</p>
         <h3>Stateless Components</h3>

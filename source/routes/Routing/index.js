@@ -5,7 +5,6 @@ import { compose } from 'redux'
 import * as snippets from './snippets'
 
 import CodeBlock from '../../components/CodeBlock'
-import SectionTitle from '../../components/SectionTitle'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 
@@ -22,7 +21,6 @@ const Routing = () => {
   return (
     <div>
       <Helmet title='Routing | Services Engineering' />
-      <SectionTitle size={5}>Routing</SectionTitle>
       <Content>
         <p>We use React Router for routing within our application. React Router allows us to define our routes in JSX syntax, providing a relatively simple API.</p>
         <p>React Router works nicely on the server also, which allows us to make use of server side rendering in our isomorphic apps.</p>
