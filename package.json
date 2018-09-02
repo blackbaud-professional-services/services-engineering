@@ -16,7 +16,6 @@
     "boiler-room-runner": "^1.4.3",
     "constructicon": "^1.2.0",
     "cxsync": "^1.0.9",
-    "dotenv-webpack": "^1.4.1",
     "es6-promise": "^4.0.5",
     "minimal.css": "^1.0.1",
     "prismic-utils": "^6.1.1",

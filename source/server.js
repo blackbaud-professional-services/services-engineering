@@ -21,7 +21,6 @@ export default ({ assets }) => {
     '/components',
     '/content',
     '/deploy',
-    '/getting-started',
     '/integration',
     '/routing',
     '/state',
