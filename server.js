@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/services-engineering/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 43);
+/******/ 	return __webpack_require__(__webpack_require__.s = 44);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,18 +74,6 @@ module.exports = require("react");
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-helmet");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("redux");
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101,15 +89,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(8);
+var _withStyles = __webpack_require__(7);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(15);
+var _styles = __webpack_require__(14);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _richText = __webpack_require__(45);
+var _richText = __webpack_require__(46);
 
 var _richText2 = _interopRequireDefault(_richText);
 
@@ -129,66 +117,31 @@ var Content = function Content(_ref) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(Content);
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 2 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _withStyles = __webpack_require__(8);
-
-var _withStyles2 = _interopRequireDefault(_withStyles);
-
-var _styles = __webpack_require__(21);
-
-var _styles2 = _interopRequireDefault(_styles);
-
-var _heading = __webpack_require__(44);
-
-var _heading2 = _interopRequireDefault(_heading);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-var SectionTitle = function SectionTitle(_ref) {
-  var _ref$size = _ref.size,
-      size = _ref$size === undefined ? 5 : _ref$size,
-      styles = _ref.styles,
-      props = _objectWithoutProperties(_ref, ['size', 'styles']);
-
-  return _react2.default.createElement(_heading2.default, _extends({
-    size: size,
-    styles: styles.root
-  }, props));
-};
-
-exports.default = (0, _withStyles2.default)(_styles2.default)(SectionTitle);
+module.exports = require("react-helmet");
 
 /***/ }),
-/* 5 */
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux");
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = require("redial");
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -202,11 +155,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(8);
+var _withStyles = __webpack_require__(7);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(14);
+var _styles = __webpack_require__(13);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -239,35 +192,35 @@ var CodeBlock = function CodeBlock(_ref) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(CodeBlock);
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/with-styles");
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router");
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Document = __webpack_require__(16);
+var _Document = __webpack_require__(15);
 
 var _Document2 = _interopRequireDefault(_Document);
 
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
 var _react = __webpack_require__(0);
 
-var _server = __webpack_require__(48);
+var _server = __webpack_require__(49);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -293,7 +246,7 @@ module.exports = function (_ref) {
 };
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -307,67 +260,66 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(9);
+var _reactRouter = __webpack_require__(8);
 
-var _Build = __webpack_require__(23);
+var _Build = __webpack_require__(25);
 
 var _Build2 = _interopRequireDefault(_Build);
 
-var _Components = __webpack_require__(25);
+var _Components = __webpack_require__(27);
 
 var _Components2 = _interopRequireDefault(_Components);
 
-var _Container = __webpack_require__(27);
+var _Container = __webpack_require__(29);
 
 var _Container2 = _interopRequireDefault(_Container);
 
-var _Content = __webpack_require__(28);
+var _Content = __webpack_require__(30);
 
 var _Content2 = _interopRequireDefault(_Content);
 
-var _Deploy = __webpack_require__(30);
+var _Deploy = __webpack_require__(32);
 
 var _Deploy2 = _interopRequireDefault(_Deploy);
 
-var _GettingStarted = __webpack_require__(31);
+var _GettingStarted = __webpack_require__(33);
 
 var _GettingStarted2 = _interopRequireDefault(_GettingStarted);
 
-var _Home = __webpack_require__(33);
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _Integration = __webpack_require__(34);
+var _Integration = __webpack_require__(35);
 
 var _Integration2 = _interopRequireDefault(_Integration);
 
-var _Routing = __webpack_require__(36);
+var _Routing = __webpack_require__(37);
 
 var _Routing2 = _interopRequireDefault(_Routing);
 
-var _State = __webpack_require__(38);
+var _State = __webpack_require__(39);
 
 var _State2 = _interopRequireDefault(_State);
 
-var _Styles = __webpack_require__(40);
+var _Styles = __webpack_require__(41);
 
 var _Styles2 = _interopRequireDefault(_Styles);
 
-var _Tests = __webpack_require__(42);
+var _Tests = __webpack_require__(43);
 
 var _Tests2 = _interopRequireDefault(_Tests);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var scrollBehaviour = function scrollBehaviour() {
+  return false;
+};
+
 exports.default = _react2.default.createElement(
   _reactRouter.Route,
-  { component: _Container2.default },
-  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
+  { component: _Container2.default, scrollBehaviour: scrollBehaviour },
+  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _GettingStarted2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/build', component: _Build2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/components', component: _Components2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/content', component: _Content2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/deploy', component: _Deploy2.default }),
-  _react2.default.createElement(_reactRouter.Route, { path: '/getting-started', component: _GettingStarted2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/integration', component: _Integration2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/routing', component: _Routing2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/state', component: _State2.default }),
@@ -376,7 +328,7 @@ exports.default = _react2.default.createElement(
 );
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -387,13 +339,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.configureStore = undefined;
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _reduxThunk = __webpack_require__(50);
+var _reduxThunk = __webpack_require__(51);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(49);
+var _reduxLogger = __webpack_require__(50);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
@@ -416,10 +368,51 @@ var configureStore = exports.configureStore = function configureStore() {
 exports.default = configureStore({});
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("boiler-room-runner");
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref, _ref2) {
+  var type = _ref.type;
+  var colors = _ref2.colors,
+      rhythm = _ref2.rhythm,
+      scale = _ref2.scale,
+      treatments = _ref2.treatments;
+  return {
+    root: _extends({
+      position: 'relative',
+      marginTop: rhythm(type ? 2.5 : 2),
+      marginBottom: rhythm(2),
+      padding: rhythm(0.5) + ' ' + rhythm(1),
+      backgroundColor: colors.lightGrey,
+      fontSize: scale(-1),
+      lineHeight: 1.75
+    }, treatments.code),
+
+    type: {
+      position: 'absolute',
+      bottom: '100%',
+      right: 0,
+      padding: rhythm(0.25) + ' ' + rhythm(0.5),
+      backgroundColor: colors.lightGrey,
+      fontSize: scale(-2)
+    }
+  };
+};
 
 /***/ }),
 /* 14 */
@@ -432,29 +425,38 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 exports.default = function (_ref, _ref2) {
-  var type = _ref.type;
+  var maxWidth = _ref.maxWidth;
   var colors = _ref2.colors,
       rhythm = _ref2.rhythm,
-      scale = _ref2.scale;
+      treatments = _ref2.treatments;
   return {
     root: {
-      position: 'relative',
-      marginTop: type && rhythm(0.5),
-      marginBottom: rhythm(1),
-      padding: rhythm(0.5) + ' ' + rhythm(1),
-      backgroundColor: colors.shade,
-      fontSize: scale(-1),
-      lineHeight: 1.75
-    },
+      maxWidth: maxWidth && rhythm(maxWidth),
 
-    type: {
-      position: 'absolute',
-      bottom: '100%',
-      right: 0,
-      padding: rhythm(0.25) + ' ' + rhythm(0.5),
-      backgroundColor: colors.shade,
-      fontSize: scale(-2)
+      h1: { padding: rhythm(2) + ' 0 ' + rhythm(1) },
+      h2: _extends({}, treatments.body, { padding: rhythm(2) + ' 0 ' + rhythm(1) }),
+      h3: _extends({}, treatments.body, { padding: rhythm(2) + ' 0 ' + rhythm(1) }),
+      h4: _extends({}, treatments.body),
+      h5: _extends({}, treatments.body),
+      h6: _extends({}, treatments.body),
+
+      a: {
+        borderBottom: '2px solid ' + colors.dark
+      },
+
+      '.highlight': {
+        display: 'inline-block',
+        margin: rhythm(-0.125),
+        padding: rhythm(0.125),
+        backgroundColor: colors.highlight
+      },
+
+      '> :first-child': {
+        paddingTop: 0
+      }
     }
   };
 };
@@ -470,51 +472,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (props, _ref) {
-  var colors = _ref.colors,
-      rhythm = _ref.rhythm,
-      transitions = _ref.transitions;
-  return {
-    root: {
-      h1: { padding: rhythm(2) + ' 0 ' + rhythm(1) },
-      h2: { padding: rhythm(2) + ' 0 ' + rhythm(1) },
-      h3: { padding: rhythm(2) + ' 0 ' + rhythm(1) },
-
-      a: {
-        opacity: 0.75,
-        borderBottom: '2px solid ' + colors.primary,
-        transition: transitions.easeOut,
-
-        ':hover': {
-          opacity: 1
-        }
-      },
-
-      '.highlight': {
-        backgroundColor: colors.highlight
-      }
-    }
-  };
-};
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _cxsync = __webpack_require__(47);
+var _cxsync = __webpack_require__(48);
 
 var _cxsync2 = _interopRequireDefault(_cxsync);
+
+var _favicon = __webpack_require__(45);
+
+var _favicon2 = _interopRequireDefault(_favicon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -551,7 +519,7 @@ exports.default = function (_ref) {
       head.title.toComponent(),
       head.meta.toComponent(),
       renderStyles(styles),
-      _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Montserrat:400,900', rel: 'stylesheet' }),
+      _react2.default.createElement('link', { rel: 'icon', type: 'image/png', href: _favicon2.default }),
       _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: _cxsync2.default.css || '' } }),
       _react2.default.createElement('script', { dangerouslySetInnerHTML: {
           __html: '\n          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n          new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n          j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n          \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n          })(window,document,\'script\',\'dataLayer\',\'GTM-PN6K34\');'
@@ -585,7 +553,7 @@ exports.default = function (_ref) {
 };
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -599,152 +567,73 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(9);
-
-var _withStyles = __webpack_require__(8);
+var _withStyles = __webpack_require__(7);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(17);
 
 var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Menu = function Menu(_ref) {
-  var classNames = _ref.classNames;
+var emojis = {
+  down: '🔽',
+  left: '◀️',
+  paperclip: '📎',
+  link: '🔗',
+  circle: '⚪️',
+  check: '✅',
+  ruler: '📐',
+  swords: '⚔️',
+  pretzel: '🥨',
+  bat: '🏓',
+  repeat: '🔁',
+  computer: '🖥',
+  ok: '👌',
+  seeNoEvil: '🙈',
+  eyes: '👀',
+  cross: '❌',
+  skull: '☠️',
+  paintbrush: '🖌',
+  palette: '🎨',
+  shrug: '🤷‍♀️',
+  no: '🙅‍♀️'
+};
+
+var EmojIcon = function EmojIcon(_ref) {
+  var name = _ref.name,
+      classNames = _ref.classNames;
   return _react2.default.createElement(
-    'nav',
+    'span',
     { className: classNames.root },
-    _react2.default.createElement(
-      'ul',
-      null,
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/' },
-          'Overview'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/getting-started' },
-          'Getting Started'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/components' },
-          'Components'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/routing' },
-          'Routing'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/state' },
-          'State'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/styles' },
-          'Styles'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/content' },
-          'Content'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/integration' },
-          'Integration'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/tests' },
-          'Tests'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/build' },
-          'Build'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouter.Link,
-          {
-            activeClassName: classNames.current,
-            to: '/deploy' },
-          'Deploy'
-        )
-      )
-    )
+    emojis[name]
   );
 };
 
-exports.default = (0, _withStyles2.default)(_styles2.default)(Menu);
+exports.default = (0, _withStyles2.default)(_styles2.default)(EmojIcon);
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  return {
+    root: {
+      fontSize: '20px',
+      position: 'relative',
+      top: '0.12em',
+      display: 'inline-block'
+    }
+  };
+};
 
 /***/ }),
 /* 18 */
@@ -757,28 +646,148 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(8);
+
+var _withStyles = __webpack_require__(7);
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _styles = __webpack_require__(19);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+var _EmojIcon = __webpack_require__(16);
+
+var _EmojIcon2 = _interopRequireDefault(_EmojIcon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header() {
+    _classCallCheck(this, Header);
+
+    var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
+
+    _this.state = { top: true };
+    _this.handleScroll = _this.handleScroll.bind(_this);
+    return _this;
+  }
+
+  _createClass(Header, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.checkIfTop();
+      window.addEventListener('scroll', this.handleScroll);
+    }
+  }, {
+    key: 'handleScroll',
+    value: function handleScroll() {
+      this.checkIfTop();
+    }
+  }, {
+    key: 'checkIfTop',
+    value: function checkIfTop() {
+      var top = this.state.top;
+
+
+      var y = window.scrollY;
+      var isTop = y === 0;
+
+      if (isTop && !top) {
+        this.setState({ top: true });
+      }
+
+      if (!isTop && top) {
+        this.setState({ top: false });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var classNames = this.props.classNames;
+      var top = this.state.top;
+
+
+      return _react2.default.createElement(
+        'div',
+        {
+          style: { boxShadow: '0 15px 30px 0 rgba(0,0,0,0.0' + (top ? '0' : '3') + ')' },
+          className: classNames.root
+        },
+        _react2.default.createElement(
+          'div',
+          { className: classNames.inner },
+          _react2.default.createElement(
+            _reactRouter.Link,
+            { to: '/' },
+            _react2.default.createElement(_EmojIcon2.default, { name: 'computer' }),
+            ' Services Engineering'
+          ),
+          _react2.default.createElement('div', { className: classNames.line })
+        )
+      );
+    }
+  }]);
+
+  return Header;
+}(_react2.default.Component);
+
+exports.default = (0, _withStyles2.default)(_styles2.default)(Header);
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 exports.default = function (props, _ref) {
-  var rhythm = _ref.rhythm,
-      treatments = _ref.treatments;
+  var rhythm = _ref.rhythm;
   return {
     root: {
-      ul: {
-        margin: rhythm(-1)
-      },
-
-      li: {
-        margin: rhythm(1)
-      }
+      transform: 'translateZ(0)',
+      transition: 'all 1s ease',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      background: 'white',
+      zIndex: 1
     },
 
-    current: _extends({}, treatments.head)
+    inner: {
+      padding: rhythm(1),
+      margin: '0 auto',
+      width: '100%',
+      maxWidth: rhythm(40),
+      fontWeight: '500',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }
   };
 };
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -792,15 +801,235 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(8);
+var _reactRouter = __webpack_require__(8);
+
+var _withStyles = __webpack_require__(7);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _styles = __webpack_require__(20);
+var _styles = __webpack_require__(21);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _Menu = __webpack_require__(17);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Menu = function Menu(_ref) {
+  var classNames = _ref.classNames;
+  return _react2.default.createElement(
+    'nav',
+    { className: classNames.root },
+    _react2.default.createElement(
+      'div',
+      { className: classNames.container },
+      _react2.default.createElement(
+        'ul',
+        { className: classNames.items },
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/' },
+            'Getting Started'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/components' },
+            'Components'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/routing' },
+            'Routing'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/state' },
+            'State'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/styles' },
+            'Styles'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/content' },
+            'Content'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/integration' },
+            'Integration'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/tests' },
+            'Tests'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/build' },
+            'Build'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/deploy' },
+            'Deploy'
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = (0, _withStyles2.default)(_styles2.default)(Menu);
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (props, _ref) {
+  var colors = _ref.colors,
+      rhythm = _ref.rhythm,
+      scale = _ref.scale;
+  return {
+    root: {
+      borderBottom: '2px solid ' + colors.lightGrey
+    },
+
+    items: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      marginLeft: rhythm(-0.5),
+      marginRight: rhythm(-0.5)
+    },
+
+    item: {
+      display: 'block',
+      padding: rhythm(0.5),
+      fontSize: scale(-0.5),
+      borderBottom: '2px solid transparent'
+    },
+
+    container: {
+      paddingRight: rhythm(1),
+      paddingLeft: rhythm(1),
+      margin: '0 auto',
+      maxWidth: rhythm(40)
+    },
+
+    current: {
+      borderBottom: '2px solid ' + colors.dark
+    }
+  };
+};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _withStyles = __webpack_require__(7);
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _styles = __webpack_require__(23);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+var _Content = __webpack_require__(1);
+
+var _Content2 = _interopRequireDefault(_Content);
+
+var _Header = __webpack_require__(18);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Menu = __webpack_require__(20);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
@@ -812,15 +1041,38 @@ var Page = function Page(_ref) {
   return _react2.default.createElement(
     'div',
     { className: classNames.root },
+    _react2.default.createElement(_Header2.default, null),
     _react2.default.createElement(
-      'aside',
-      { className: classNames.sidebar },
-      _react2.default.createElement(_Menu2.default, null)
+      'div',
+      { className: classNames.intro },
+      _react2.default.createElement(
+        _Content2.default,
+        { maxWidth: 26 },
+        _react2.default.createElement(
+          'h1',
+          null,
+          'The following is a guide to how we build apps in services. We mostly build Universal JavaScript apps, and we have a collection of tools to help us.'
+        )
+      ),
+      _react2.default.createElement(
+        _Content2.default,
+        { maxWidth: 18 },
+        _react2.default.createElement(
+          'p',
+          null,
+          'Universal, or Isomorphic, JavaScript describes applications where the same codebase runs both on the server and in the client.'
+        )
+      )
     ),
+    _react2.default.createElement(_Menu2.default, null),
     _react2.default.createElement(
       'section',
       { className: classNames.content },
-      children
+      _react2.default.createElement(
+        'div',
+        { className: classNames.contentInner },
+        children
+      )
     )
   );
 };
@@ -828,7 +1080,7 @@ var Page = function Page(_ref) {
 exports.default = (0, _withStyles2.default)(_styles2.default)(Page);
 
 /***/ }),
-/* 20 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -846,29 +1098,30 @@ exports.default = function (props, _ref) {
       treatments = _ref.treatments;
   return {
     root: _extends({
-      display: 'flex',
-      alignItems: 'stretch',
-      justifyContent: 'flex-start',
-      minHeight: '100vh',
+      paddingTop: rhythm(2),
       color: colors.dark
     }, treatments.body),
 
-    sidebar: {
-      flex: '0 0 ' + rhythm(10),
-      padding: rhythm(2) + ' ' + rhythm(1),
-      backgroundColor: colors.shade
+    intro: {
+      padding: rhythm(4) + ' ' + rhythm(1),
+      margin: '0 auto',
+      maxWidth: rhythm(40)
     },
 
     content: {
-      flex: 1,
-      padding: rhythm(2),
+      padding: rhythm(2) + ' ' + rhythm(1),
+      margin: '0 auto',
       maxWidth: rhythm(40)
+    },
+
+    contentInner: {
+      maxWidth: rhythm(26)
     }
   };
 };
 
 /***/ }),
-/* 21 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -877,68 +1130,42 @@ exports.default = function (props, _ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-exports.default = function (props, _ref) {
-  var rhythm = _ref.rhythm;
-  return {
-    root: {
-      marginBottom: rhythm(1)
-    }
-  };
-};
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var rhythm = exports.rhythm = function rhythm() {
-  var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  var unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'rem';
-  var basis = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1.5;
-  return '' + basis * value + unit;
-};
-
-var scale = exports.scale = function scale() {
-  var exponent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var scale = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1.2;
-  return Math.pow(scale, exponent) + 'rem';
-};
-
-var transitions = exports.transitions = {
-  easeOut: 'ease-out .25s'
-};
-
 var fonts = exports.fonts = {
-  head: 'Montserrat, Arial, sans-serif',
-  body: 'Montserrat, Arial, sans-serif'
+  head: '"helvetica neue", arial, sans-serif',
+  body: '"helvetica neue", arial, sans-serif',
+  code: 'monaco, Consolas, "Lucida Console", monospace'
 };
 
 var treatments = exports.treatments = {
   head: {
     fontFamily: fonts.head,
-    fontWeight: 900
+    fontWeight: 400,
+    lineHeight: 1.5,
+    WebkitFontSmoothing: 'antialiased'
   },
   body: {
-    fontFamily: fonts.body
+    fontFamily: fonts.body,
+    fontWeight: 500,
+    lineHeight: 1.5,
+    WebkitFontSmoothing: 'antialiased'
+  },
+  code: {
+    fontFamily: fonts.code
   }
 };
 
 var colors = exports.colors = {
-  primary: '#8BBF47',
-  light: '#FFF',
-  dark: '#444',
-  shade: '#F4F4F4',
-  highlight: '#E7F2D9'
+  primary: '#333',
+  secondary: '#444',
+  tertiary: '#555',
+  light: '#fdfdfd',
+  dark: '#282828',
+  lightGrey: '#f5f5f5',
+  highlight: '#eee'
 };
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -952,29 +1179,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(24);
+var _snippets = __webpack_require__(26);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -999,11 +1222,6 @@ var Build = function Build() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Build | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Build'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -1218,7 +1436,7 @@ var Build = function Build() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Build);
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1232,7 +1450,7 @@ var buildJson = exports.buildJson = "{\n  \"scripts\": {\n    \"build\": \"brb b
 var staticRoutes = exports.staticRoutes = "app.staticRoutes = [\n  '/',\n  '/about',\n  '/faqs'\n]";
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1246,31 +1464,27 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(9);
+var _reactRouter = __webpack_require__(8);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(26);
+var _snippets = __webpack_require__(28);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -1295,11 +1509,6 @@ var Components = function Components() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Components | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Components'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -1609,7 +1818,7 @@ var Components = function Components() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Components);
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1633,7 +1842,7 @@ var higherOrderComponent = exports.higherOrderComponent = "import React from 're
 var constructiconExample = exports.constructiconExample = "import React from 'react'\nimport Heading from 'constructicon/heading'\nimport RichText from 'constructicon/rich-text'\nimport Section from 'constructicon/section'\n\nconst MyComponent = () => (\n  <Section background='light' foreground='dark'>\n    <Heading color='primary'>My Title</Heading>\n    <RichText>\n      <p>Lorem ipsum</p>\n    </RichText>\n  </Section>\n)\n\nexport default MyComponent";
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1647,15 +1856,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _traits = __webpack_require__(22);
+var _traits = __webpack_require__(24);
 
 var traits = _interopRequireWildcard(_traits);
 
-var _Page = __webpack_require__(19);
+var _Page = __webpack_require__(22);
 
 var _Page2 = _interopRequireDefault(_Page);
 
-var _traitsProvider = __webpack_require__(46);
+var _traitsProvider = __webpack_require__(47);
 
 var _traitsProvider2 = _interopRequireDefault(_traitsProvider);
 
@@ -1679,7 +1888,7 @@ var Container = function Container(_ref) {
 exports.default = Container;
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1693,29 +1902,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(29);
+var _snippets = __webpack_require__(31);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -1740,11 +1945,6 @@ var ContentRoute = function ContentRoute() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Content | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Content'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -1955,7 +2155,7 @@ var ContentRoute = function ContentRoute() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(ContentRoute);
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1973,7 +2173,7 @@ var prismicExample = exports.prismicExample = "{\n  'hero-title': {\n    type: '
 var storeExample = exports.storeExample = "{\n  hero: {\n    title: 'Our Hero Title',\n    image: {\n      url: 'https://path.to.image'\n    }\n  },\n  intro: {\n    title: 'Our Intro Title',\n    copy: [\n      { type: 'p', content: 'Lorem ipsum' },\n      { type: 'p', content: 'Lorem ipsum' }\n    ]\n  }\n}";
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1987,25 +2187,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -2028,11 +2224,6 @@ var Deploy = function Deploy() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Build | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Build'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -2355,7 +2546,7 @@ var Deploy = function Deploy() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Deploy);
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2369,29 +2560,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(32);
+var _snippets = __webpack_require__(34);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -2416,11 +2603,6 @@ var GettingStarted = function GettingStarted() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Getting Started | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Getting Started'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -2612,7 +2794,7 @@ var GettingStarted = function GettingStarted() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(GettingStarted);
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2626,7 +2808,7 @@ var bootstrap = exports.bootstrap = "yarn global add brm\nbrm create";
 var start = exports.start = "yarn install\nyarn start";
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2640,105 +2822,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
-
-var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
-
-var _Content = __webpack_require__(3);
-
-var _Content2 = _interopRequireDefault(_Content);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var hooks = {
-  fetch: function fetch(_ref) {
-    var dispatch = _ref.dispatch,
-        state = _ref.state;
-    return Promise.all([]);
-  }
-};
-
-var mapState = function mapState() {
-  return {};
-};
-
-var Root = function Root() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(_reactHelmet2.default, { title: 'Overview | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Overview'
-    ),
-    _react2.default.createElement(
-      _Content2.default,
-      null,
-      _react2.default.createElement(
-        'p',
-        null,
-        'This documentation aims to act as a reference point on how we build apps in services, especially for new developers within the team.'
-      ),
-      _react2.default.createElement(
-        'p',
-        null,
-        'We mostly build Isomorphic JavaScript apps, which execute both on the server and in the browser. We have a reasonably extensive toolbelt to help us build these sites, so hopefully the following pages help illustrate how to use these tools effectively.'
-      )
-    )
-  );
-};
-
-exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Root);
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _redial = __webpack_require__(6);
-
-var _reactRedux = __webpack_require__(5);
-
-var _redux = __webpack_require__(2);
-
-var _snippets = __webpack_require__(35);
+var _snippets = __webpack_require__(36);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -2763,11 +2865,6 @@ var Integration = function Integration() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Integration | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Integration'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -2884,7 +2981,7 @@ var Integration = function Integration() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Integration);
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2896,7 +2993,7 @@ Object.defineProperty(exports, "__esModule", {
 var supporticon = exports.supporticon = "<Leaderboard\n  campaign='au-123'\n  type='team'\n/>\n\n<PageSearch\n  campaign='au-123'\n/>\n";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2910,29 +3007,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(37);
+var _snippets = __webpack_require__(38);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -2957,11 +3050,6 @@ var Routing = function Routing() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Routing | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Routing'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -3118,7 +3206,7 @@ var Routing = function Routing() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Routing);
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3136,7 +3224,7 @@ var linkExample = exports.linkExample = "import React from 'react'\nimport { Lin
 var withRouterExample = exports.withRouterExample = "import React from 'react'\nimport { withRouter } from 'react-router'\n\nclass MyProtectedRoute extends Component {\n  componentWillMount () {\n    if (!isAuthorised()) {\n      router.push('/')\n    }\n  }\n\n  render () {\n    return <div>Protected</div>\n  }\n}\n\nexport default withRouter(MyProtectedRoute)";
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3150,29 +3238,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(39);
+var _snippets = __webpack_require__(40);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -3197,11 +3281,6 @@ var State = function State() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'State | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'State'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -3412,7 +3491,7 @@ var State = function State() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(State);
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3432,7 +3511,7 @@ var thunk = exports.thunk = "const addUser = (name) => (dispatch) => {\n  dispat
 var connect = exports.connect = "import React from 'react'\nimport { connect } from 'react-redux'\nimport { addUser } from 'path/to/our/store'\n\nconst Users = ({\n  addUser,\n  users = []\n}) => (\n  <div>\n    <ul>\n      {users.map((user) => <li>{user}</li>)}\n    </ul>\n    <button onClick={() => addUser('Joe')}>Add Joe</button>\n  </div>\n)\n\nconst mapStateToProps = (state) => ({ users: state.users })\nconst mapDispatchToProps = { addUser }\n\nexport default connect(mapStateToProps, mapDispatchToProps)(Users)";
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3446,29 +3525,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(41);
+var _snippets = __webpack_require__(42);
 
 var snippets = _interopRequireWildcard(_snippets);
 
-var _CodeBlock = __webpack_require__(7);
+var _CodeBlock = __webpack_require__(6);
 
 var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -3493,11 +3568,6 @@ var Styles = function Styles() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Styles | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Styles'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -3752,7 +3822,7 @@ var Styles = function Styles() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Styles);
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3766,7 +3836,7 @@ var traitsProvider = exports.traitsProvider = "// source/lib/traits\nexport cons
 var withStyles = exports.withStyles = "import React from 'react'\nimport withStyles from 'constructicon/with-styles'\nimport Heading from 'constructicon/heading'\n\nconst MyComponent = ({\n  classNames,\n  styles\n}) => (\n  <div className={classNames.container}>\n    <Heading styles={styles.heading}>My Heading</Heading>\n  </div>\n)\n\nconst styles = (props, traits) => ({\n  container: {\n    padding: traits.rhythm(1)\n  },\n\n  heading: {\n    color: traits.colors.red\n  }\n})\n\nexport default withStyles(styles)(MyComponent)";
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3780,21 +3850,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _redial = __webpack_require__(6);
+var _redial = __webpack_require__(5);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _redux = __webpack_require__(2);
+var _redux = __webpack_require__(3);
 
-var _SectionTitle = __webpack_require__(4);
-
-var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
-
-var _reactHelmet = __webpack_require__(1);
+var _reactHelmet = __webpack_require__(2);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _Content = __webpack_require__(3);
+var _Content = __webpack_require__(1);
 
 var _Content2 = _interopRequireDefault(_Content);
 
@@ -3817,11 +3883,6 @@ var Tests = function Tests() {
     'div',
     null,
     _react2.default.createElement(_reactHelmet2.default, { title: 'Tests | Services Engineering' }),
-    _react2.default.createElement(
-      _SectionTitle2.default,
-      { size: 5 },
-      'Tests'
-    ),
     _react2.default.createElement(
       _Content2.default,
       null,
@@ -3897,7 +3958,7 @@ var Tests = function Tests() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Tests);
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3908,7 +3969,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.renderDocument = undefined;
 
-var _renderDocument = __webpack_require__(10);
+var _renderDocument = __webpack_require__(9);
 
 Object.defineProperty(exports, 'renderDocument', {
   enumerable: true,
@@ -3917,11 +3978,11 @@ Object.defineProperty(exports, 'renderDocument', {
   }
 });
 
-var _boilerRoomRunner = __webpack_require__(13);
+var _boilerRoomRunner = __webpack_require__(12);
 
-var _store = __webpack_require__(12);
+var _store = __webpack_require__(11);
 
-var _routes = __webpack_require__(11);
+var _routes = __webpack_require__(10);
 
 var _routes2 = _interopRequireDefault(_routes);
 
@@ -3943,49 +4004,49 @@ exports.default = function (_ref) {
     assets: assets
   });
 
-  app.staticRoutes = ['/', '/build', '/components', '/content', '/deploy', '/getting-started', '/integration', '/routing', '/state', '/styles', '/tests'];
+  app.staticRoutes = ['/', '/build', '/components', '/content', '/deploy', '/integration', '/routing', '/state', '/styles', '/tests'];
 
   return app;
 };
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-module.exports = require("constructicon/heading");
-
-/***/ }),
 /* 45 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("constructicon/rich-text");
+module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports) {
 
-module.exports = require("constructicon/traits-provider");
+module.exports = require("constructicon/rich-text");
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports) {
 
-module.exports = require("cxsync");
+module.exports = require("constructicon/traits-provider");
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-dom/server");
+module.exports = require("cxsync");
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-logger");
+module.exports = require("react-dom/server");
 
 /***/ }),
 /* 50 */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-logger");
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
