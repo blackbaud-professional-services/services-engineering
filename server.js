@@ -1060,7 +1060,7 @@ var Page = function Page(_ref) {
         _react2.default.createElement(
           'p',
           null,
-          'Universal, or Isomorphic, JavaScript describes applications where the same codebase runs both on the server and in the client.'
+          'Universal, or Isomorphic, JavaScript describes applications where the same codebase runs both on the server and in the browser.'
         )
       )
     ),
