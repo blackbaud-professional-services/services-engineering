@@ -17,7 +17,7 @@ const Page = ({
         <h1>The following is a guide to how we build apps in services. We mostly build Universal JavaScript apps, and we have a collection of tools to help us.</h1>
       </Content>
       <Content maxWidth={18}>
-        <p>Universal, or Isomorphic, JavaScript describes applications where the same codebase runs both on the server and in the client.</p>
+        <p>Universal, or Isomorphic, JavaScript describes applications where the same codebase runs both on the server and in the browser.</p>
       </Content>
     </div>
     <Menu />
