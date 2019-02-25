@@ -2401,14 +2401,65 @@ var Deploy = function Deploy() {
         'brb deploy --target=lambda --bucket=bucket-name --fn-name=myAppNameProd'
       ),
       _react2.default.createElement(
-        'h3',
+        'h5',
         null,
-        'Automating via Buildkite'
+        'Going Live'
       ),
       _react2.default.createElement(
         'p',
         null,
-        'Our app is setup to build and deploy from the command line, but usually, we want to automate this using a CI tool, in our case Buildkite. We do this for a couple of reasons:'
+        'There are a few steps to make a Lambda site public'
+      ),
+      _react2.default.createElement(
+        'ul',
+        null,
+        _react2.default.createElement(
+          'li',
+          null,
+          'Once your deployment is working, go to ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'Custom Domain Names'
+          ),
+          ' in API Gateway'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create a new entry, specfiying your desired domain name'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Add a base path mapping, selecting the ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'prod'
+          ),
+          ' stage of the applicable stack'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'This will provide us with a CloudFront URL'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'You, or the client, will need to take this URL and create a CNAME record to publish the site'
+        )
+      ),
+      _react2.default.createElement(
+        'h3',
+        null,
+        'Automating via Travis'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'Our app is setup to build and deploy from the command line, but usually, we want to automate this using a CI tool, in our case Travis. We do this for a couple of reasons:'
       ),
       _react2.default.createElement(
         'ul',
@@ -2427,7 +2478,7 @@ var Deploy = function Deploy() {
       _react2.default.createElement(
         'p',
         null,
-        'When Boilermaker generated our app, it would have included the necessary files that will be used by Buildkite to make up our pipeline.'
+        'When Boilermaker generated our app, it would have included the necessary files that will be used by Travis to make up our pipeline.'
       ),
       _react2.default.createElement(
         'ul',
@@ -2438,19 +2489,9 @@ var Deploy = function Deploy() {
           _react2.default.createElement(
             'span',
             { className: 'highlight' },
-            '.buildkite/pipeline.yml'
+            '.travis.yml'
           ),
           ': these are the steps of our pipeline'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          _react2.default.createElement(
-            'span',
-            { className: 'highlight' },
-            'bin/test and bin/deploy'
-          ),
-          ': these are the actual scripts that the pipeline will execute'
         ),
         _react2.default.createElement(
           'li',
@@ -2466,7 +2507,7 @@ var Deploy = function Deploy() {
       _react2.default.createElement(
         'p',
         null,
-        'To create the pipeline in Buildkite, we need to do a few steps.'
+        'To configure the deployment in Travis, we need to do a few steps.'
       ),
       _react2.default.createElement(
         'ul',
@@ -2474,44 +2515,50 @@ var Deploy = function Deploy() {
         _react2.default.createElement(
           'li',
           null,
-          'Login using the credentials in 1Password'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'Create a new pipeline specifying the name and Github repo of our project'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'Add the necessary environment variables, which include the ',
+          'Visit ',
           _react2.default.createElement(
-            'span',
-            { className: 'highlight' },
-            'APP_NAME'
+            'a',
+            { href: 'https://travis-ci.com', target: '_blank' },
+            'Travis'
           ),
-          ' and the necessary AWS credentials.'
+          ', authenticating with your Github credentials'
         ),
         _react2.default.createElement(
           'li',
           null,
-          'Tell Buildkite to look at our pipeline config in our codebase, by adding ',
+          'Go to the settings of the relevant repository'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Only tick ',
           _react2.default.createElement(
             'span',
             { className: 'highlight' },
-            'buildkite-agent pipeline upload'
+            'Build pushed branches'
           )
         ),
         _react2.default.createElement(
           'li',
           null,
-          'Configure our Github webhooks following the necessary instructions'
+          'Tick both options in the ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'Auto Cancellation'
+          ),
+          ' section'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Enter the relevant environment variables'
         )
       ),
       _react2.default.createElement(
         'p',
         null,
-        'And that\'s it, when our repo is updated, the pipeline will run the tests, and deploy to staging and production. Although Boilermaker gives us a good baseline, we can configure our pipeline as needed.'
+        'And that\'s it, when our repo is updated, the pipeline will run the tests, and deploy to staging and production. Although Boilermaker gives us a good baseline, we can configure our deployment as needed.'
       ),
       _react2.default.createElement(
         'h3',
