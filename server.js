@@ -3225,6 +3225,16 @@ var Rails = function Rails() {
         _react2.default.createElement(
           'li',
           null,
+          'Install yarn ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'npm install -g yarn'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
           _react2.default.createElement(
             'a',
             { href: 'https://medium.com/@sourav.moitr/installing-rbenv-and-ruby-on-ubuntu-16-04-cc9471d2674e' },
