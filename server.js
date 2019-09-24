@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/services-engineering/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 44);
+/******/ 	return __webpack_require__(__webpack_require__.s = 46);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -97,7 +97,7 @@ var _styles = __webpack_require__(14);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _richText = __webpack_require__(46);
+var _richText = __webpack_require__(48);
 
 var _richText2 = _interopRequireDefault(_richText);
 
@@ -165,6 +165,14 @@ var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var selectText = function selectText(el) {
+  var range = document.createRange();
+
+  range.selectNode(el);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+};
+
 var CodeBlock = function CodeBlock(_ref) {
   var children = _ref.children,
       classNames = _ref.classNames,
@@ -179,7 +187,10 @@ var CodeBlock = function CodeBlock(_ref) {
     ),
     _react2.default.createElement(
       'pre',
-      null,
+      { onClick: function onClick(_ref2) {
+          var target = _ref2.target;
+          return selectText(target);
+        } },
       _react2.default.createElement(
         'code',
         null,
@@ -220,7 +231,7 @@ var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
 var _react = __webpack_require__(0);
 
-var _server = __webpack_require__(49);
+var _server = __webpack_require__(51);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -290,19 +301,23 @@ var _Integration = __webpack_require__(35);
 
 var _Integration2 = _interopRequireDefault(_Integration);
 
-var _Routing = __webpack_require__(37);
+var _Rails = __webpack_require__(37);
+
+var _Rails2 = _interopRequireDefault(_Rails);
+
+var _Routing = __webpack_require__(39);
 
 var _Routing2 = _interopRequireDefault(_Routing);
 
-var _State = __webpack_require__(39);
+var _State = __webpack_require__(41);
 
 var _State2 = _interopRequireDefault(_State);
 
-var _Styles = __webpack_require__(41);
+var _Styles = __webpack_require__(43);
 
 var _Styles2 = _interopRequireDefault(_Styles);
 
-var _Tests = __webpack_require__(43);
+var _Tests = __webpack_require__(45);
 
 var _Tests2 = _interopRequireDefault(_Tests);
 
@@ -321,6 +336,7 @@ exports.default = _react2.default.createElement(
   _react2.default.createElement(_reactRouter.Route, { path: '/content', component: _Content2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/deploy', component: _Deploy2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/integration', component: _Integration2.default }),
+  _react2.default.createElement(_reactRouter.Route, { path: '/rails', component: _Rails2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/routing', component: _Routing2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/state', component: _State2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: '/styles', component: _Styles2.default }),
@@ -341,11 +357,11 @@ exports.configureStore = undefined;
 
 var _redux = __webpack_require__(3);
 
-var _reduxThunk = __webpack_require__(51);
+var _reduxThunk = __webpack_require__(53);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(50);
+var _reduxLogger = __webpack_require__(52);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
@@ -401,7 +417,12 @@ exports.default = function (_ref, _ref2) {
       backgroundColor: colors.lightGrey,
       fontSize: scale(-1),
       lineHeight: 1.75
-    }, treatments.code),
+    }, treatments.code, {
+      '> pre': {
+        whiteSpace: 'pre',
+        overflow: 'auto'
+      }
+    }),
 
     type: {
       position: 'absolute',
@@ -476,11 +497,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _cxsync = __webpack_require__(48);
+var _cxsync = __webpack_require__(50);
 
 var _cxsync2 = _interopRequireDefault(_cxsync);
 
-var _favicon = __webpack_require__(45);
+var _favicon = __webpack_require__(47);
 
 var _favicon2 = _interopRequireDefault(_favicon);
 
@@ -942,6 +963,18 @@ var Menu = function Menu(_ref) {
               className: classNames.item,
               to: '/deploy' },
             'Deploy'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouter.Link,
+            {
+              activeClassName: classNames.current,
+              className: classNames.item,
+              to: '/rails' },
+            'Rails'
           )
         )
       )
@@ -1864,7 +1897,7 @@ var _Page = __webpack_require__(22);
 
 var _Page2 = _interopRequireDefault(_Page);
 
-var _traitsProvider = __webpack_require__(47);
+var _traitsProvider = __webpack_require__(49);
 
 var _traitsProvider2 = _interopRequireDefault(_traitsProvider);
 
@@ -2401,65 +2434,14 @@ var Deploy = function Deploy() {
         'brb deploy --target=lambda --bucket=bucket-name --fn-name=myAppNameProd'
       ),
       _react2.default.createElement(
-        'h5',
-        null,
-        'Going Live'
-      ),
-      _react2.default.createElement(
-        'p',
-        null,
-        'There are a few steps to make a Lambda site public'
-      ),
-      _react2.default.createElement(
-        'ul',
-        null,
-        _react2.default.createElement(
-          'li',
-          null,
-          'Once your deployment is working, go to ',
-          _react2.default.createElement(
-            'span',
-            { className: 'highlight' },
-            'Custom Domain Names'
-          ),
-          ' in API Gateway'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'Create a new entry, specfiying your desired domain name'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'Add a base path mapping, selecting the ',
-          _react2.default.createElement(
-            'span',
-            { className: 'highlight' },
-            'prod'
-          ),
-          ' stage of the applicable stack'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'This will provide us with a CloudFront URL'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'You, or the client, will need to take this URL and create a CNAME record to publish the site'
-        )
-      ),
-      _react2.default.createElement(
         'h3',
         null,
-        'Automating via Travis'
+        'Automating via Buildkite'
       ),
       _react2.default.createElement(
         'p',
         null,
-        'Our app is setup to build and deploy from the command line, but usually, we want to automate this using a CI tool, in our case Travis. We do this for a couple of reasons:'
+        'Our app is setup to build and deploy from the command line, but usually, we want to automate this using a CI tool, in our case Buildkite. We do this for a couple of reasons:'
       ),
       _react2.default.createElement(
         'ul',
@@ -2478,7 +2460,7 @@ var Deploy = function Deploy() {
       _react2.default.createElement(
         'p',
         null,
-        'When Boilermaker generated our app, it would have included the necessary files that will be used by Travis to make up our pipeline.'
+        'When Boilermaker generated our app, it would have included the necessary files that will be used by Buildkite to make up our pipeline.'
       ),
       _react2.default.createElement(
         'ul',
@@ -2489,9 +2471,19 @@ var Deploy = function Deploy() {
           _react2.default.createElement(
             'span',
             { className: 'highlight' },
-            '.travis.yml'
+            '.buildkite/pipeline.yml'
           ),
           ': these are the steps of our pipeline'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'bin/test and bin/deploy'
+          ),
+          ': these are the actual scripts that the pipeline will execute'
         ),
         _react2.default.createElement(
           'li',
@@ -2507,7 +2499,7 @@ var Deploy = function Deploy() {
       _react2.default.createElement(
         'p',
         null,
-        'To configure the deployment in Travis, we need to do a few steps.'
+        'To create the pipeline in Buildkite, we need to do a few steps.'
       ),
       _react2.default.createElement(
         'ul',
@@ -2515,50 +2507,44 @@ var Deploy = function Deploy() {
         _react2.default.createElement(
           'li',
           null,
-          'Visit ',
-          _react2.default.createElement(
-            'a',
-            { href: 'https://travis-ci.com', target: '_blank' },
-            'Travis'
-          ),
-          ', authenticating with your Github credentials'
+          'Login using the credentials in 1Password'
         ),
         _react2.default.createElement(
           'li',
           null,
-          'Go to the settings of the relevant repository'
+          'Create a new pipeline specifying the name and Github repo of our project'
         ),
         _react2.default.createElement(
           'li',
           null,
-          'Only tick ',
+          'Add the necessary environment variables, which include the ',
           _react2.default.createElement(
             'span',
             { className: 'highlight' },
-            'Build pushed branches'
+            'APP_NAME'
+          ),
+          ' and the necessary AWS credentials.'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Tell Buildkite to look at our pipeline config in our codebase, by adding ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'buildkite-agent pipeline upload'
           )
         ),
         _react2.default.createElement(
           'li',
           null,
-          'Tick both options in the ',
-          _react2.default.createElement(
-            'span',
-            { className: 'highlight' },
-            'Auto Cancellation'
-          ),
-          ' section'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          'Enter the relevant environment variables'
+          'Configure our Github webhooks following the necessary instructions'
         )
       ),
       _react2.default.createElement(
         'p',
         null,
-        'And that\'s it, when our repo is updated, the pipeline will run the tests, and deploy to staging and production. Although Boilermaker gives us a good baseline, we can configure our deployment as needed.'
+        'And that\'s it, when our repo is updated, the pipeline will run the tests, and deploy to staging and production. Although Boilermaker gives us a good baseline, we can configure our pipeline as needed.'
       ),
       _react2.default.createElement(
         'h3',
@@ -3092,6 +3078,308 @@ var mapState = function mapState() {
   return {};
 };
 
+var Rails = function Rails() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_reactHelmet2.default, { title: 'Ruby on Rails | Services Engineering' }),
+    _react2.default.createElement(
+      _Content2.default,
+      null,
+      _react2.default.createElement(
+        'h3',
+        null,
+        'Ruby on Rails'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'Whilst we mostly build isomorphic Javascript applications, we also have a few Ruby on Rails apps which we mantain.'
+      ),
+      _react2.default.createElement(
+        'h3',
+        null,
+        'Deploying a Rails app to AWS'
+      ),
+      _react2.default.createElement(
+        'h4',
+        null,
+        'Resources:'
+      ),
+      _react2.default.createElement(
+        'ul',
+        null,
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://gorails.com/deploy/ubuntu/18.04' },
+            'https://gorails.com/deploy/ubuntu/18.04'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3' },
+            'https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://medium.com/@KerrySheldon/ec2-exercise-1-6-deploy-a-rails-app-to-an-ec2-instance-using-capistrano-3485238e4a4a' },
+            'https://medium.com/@KerrySheldon/ec2-exercise-1-6-deploy-a-rails-app-to-an-ec2-instance-using-capistrano-3485238e4a4a'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'h4',
+        null,
+        'AWS:'
+      ),
+      _react2.default.createElement(
+        'ul',
+        null,
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create RDS PostgreSQL DB'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create EC2 Instance - Ubuntu',
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              'Create or assign relevant security groups'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Create EC2 key pair'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create and associate EC2 Elastic IP'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create EC2 load balancer'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Setup EC2 Target groups, '
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create ACM certificate for intended domain in region if doesn\'t exist, attach to load balancer'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create route 53 DNS record'
+        )
+      ),
+      _react2.default.createElement(
+        'h3',
+        null,
+        'Instance setup'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'First, install any relevent system dependencies:'
+      ),
+      _react2.default.createElement(
+        _CodeBlock2.default,
+        { type: 'ruby' },
+        snippets.serverDeps
+      ),
+      _react2.default.createElement(
+        'ul',
+        null,
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://github.com/nvm-sh/nvm#install--update-script' },
+            'Install NVM/Node'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: 'https://medium.com/@sourav.moitr/installing-rbenv-and-ruby-on-ubuntu-16-04-cc9471d2674e' },
+            'Install rbenv/ruby'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Install bundler:',
+          _react2.default.createElement(
+            _CodeBlock2.default,
+            { type: 'ruby' },
+            snippets.gemInstall
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Create DB ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'RAILS_ENV=production rails db:create'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Setup NGINX'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Set hostname ',
+          _react2.default.createElement(
+            'span',
+            { className: 'highlight' },
+            'sudo nano /etc/hostname'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Add any useful aliases to the server'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Add any environment-specific config'
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'Generate an SSH key pair, then:',
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              'Add generated private key to Travis'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Add generated public key to Github repo'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Add public key to ',
+              _react2.default.createElement(
+                'span',
+                { className: 'highlight' },
+                'authorized_keys'
+              ),
+              ' on the server'
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Rails);
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var serverDeps = exports.serverDeps = "sudo apt-get install gnupg libpq-dev build-essential openssl curl git-core nodejs nginx imagemagick";
+
+var gemInstall = exports.gemInstall = "gem update\ngem install bundler\ngem update\n";
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _redial = __webpack_require__(5);
+
+var _reactRedux = __webpack_require__(4);
+
+var _redux = __webpack_require__(3);
+
+var _snippets = __webpack_require__(40);
+
+var snippets = _interopRequireWildcard(_snippets);
+
+var _CodeBlock = __webpack_require__(6);
+
+var _CodeBlock2 = _interopRequireDefault(_CodeBlock);
+
+var _reactHelmet = __webpack_require__(2);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _Content = __webpack_require__(1);
+
+var _Content2 = _interopRequireDefault(_Content);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var hooks = {
+  fetch: function fetch(_ref) {
+    var dispatch = _ref.dispatch,
+        state = _ref.state;
+    return Promise.all([]);
+  }
+};
+
+var mapState = function mapState() {
+  return {};
+};
+
 var Routing = function Routing() {
   return _react2.default.createElement(
     'div',
@@ -3253,7 +3541,7 @@ var Routing = function Routing() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Routing);
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3271,7 +3559,7 @@ var linkExample = exports.linkExample = "import React from 'react'\nimport { Lin
 var withRouterExample = exports.withRouterExample = "import React from 'react'\nimport { withRouter } from 'react-router'\n\nclass MyProtectedRoute extends Component {\n  componentWillMount () {\n    if (!isAuthorised()) {\n      router.push('/')\n    }\n  }\n\n  render () {\n    return <div>Protected</div>\n  }\n}\n\nexport default withRouter(MyProtectedRoute)";
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3291,7 +3579,7 @@ var _reactRedux = __webpack_require__(4);
 
 var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(40);
+var _snippets = __webpack_require__(42);
 
 var snippets = _interopRequireWildcard(_snippets);
 
@@ -3538,7 +3826,7 @@ var State = function State() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(State);
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3558,7 +3846,7 @@ var thunk = exports.thunk = "const addUser = (name) => (dispatch) => {\n  dispat
 var connect = exports.connect = "import React from 'react'\nimport { connect } from 'react-redux'\nimport { addUser } from 'path/to/our/store'\n\nconst Users = ({\n  addUser,\n  users = []\n}) => (\n  <div>\n    <ul>\n      {users.map((user) => <li>{user}</li>)}\n    </ul>\n    <button onClick={() => addUser('Joe')}>Add Joe</button>\n  </div>\n)\n\nconst mapStateToProps = (state) => ({ users: state.users })\nconst mapDispatchToProps = { addUser }\n\nexport default connect(mapStateToProps, mapDispatchToProps)(Users)";
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3578,7 +3866,7 @@ var _reactRedux = __webpack_require__(4);
 
 var _redux = __webpack_require__(3);
 
-var _snippets = __webpack_require__(42);
+var _snippets = __webpack_require__(44);
 
 var snippets = _interopRequireWildcard(_snippets);
 
@@ -3869,7 +4157,7 @@ var Styles = function Styles() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Styles);
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3883,7 +4171,7 @@ var traitsProvider = exports.traitsProvider = "// source/lib/traits\nexport cons
 var withStyles = exports.withStyles = "import React from 'react'\nimport withStyles from 'constructicon/with-styles'\nimport Heading from 'constructicon/heading'\n\nconst MyComponent = ({\n  classNames,\n  styles\n}) => (\n  <div className={classNames.container}>\n    <Heading styles={styles.heading}>My Heading</Heading>\n  </div>\n)\n\nconst styles = (props, traits) => ({\n  container: {\n    padding: traits.rhythm(1)\n  },\n\n  heading: {\n    color: traits.colors.red\n  }\n})\n\nexport default withStyles(styles)(MyComponent)";
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4005,7 +4293,7 @@ var Tests = function Tests() {
 exports.default = (0, _redux.compose)((0, _reactRedux.connect)(mapState), (0, _redial.provideHooks)(hooks))(Tests);
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4057,43 +4345,43 @@ exports.default = function (_ref) {
 };
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "3da6f308c48368a5ae9ab541b51f9c45.png";
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/rich-text");
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = require("constructicon/traits-provider");
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = require("cxsync");
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-logger");
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
