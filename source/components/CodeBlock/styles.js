@@ -14,7 +14,11 @@ export default ({
     backgroundColor: colors.lightGrey,
     fontSize: scale(-1),
     lineHeight: 1.75,
-    ...treatments.code
+    ...treatments.code,
+    '> pre': {
+      whiteSpace: 'pre',
+      overflow: 'auto'
+    }
   },
 
   type: {

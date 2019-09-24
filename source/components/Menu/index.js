@@ -89,6 +89,14 @@ const Menu = ({
             Deploy
           </Link>
         </li>
+        <li>
+          <Link
+            activeClassName={classNames.current}
+            className={classNames.item}
+            to='/rails'>
+            Rails
+          </Link>
+        </li>
       </ul>
     </div>
   </nav>
