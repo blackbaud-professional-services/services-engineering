@@ -3207,7 +3207,7 @@ var Rails = function Rails() {
       ),
       _react2.default.createElement(
         _CodeBlock2.default,
-        { type: 'ruby' },
+        { type: 'bash' },
         snippets.serverDeps
       ),
       _react2.default.createElement(
@@ -3247,7 +3247,7 @@ var Rails = function Rails() {
           'Install bundler:',
           _react2.default.createElement(
             _CodeBlock2.default,
-            { type: 'ruby' },
+            { type: 'bash' },
             snippets.gemInstall
           )
         ),
@@ -3264,7 +3264,12 @@ var Rails = function Rails() {
         _react2.default.createElement(
           'li',
           null,
-          'Setup NGINX'
+          'Setup NGINX:',
+          _react2.default.createElement(
+            _CodeBlock2.default,
+            { type: 'bash' },
+            snippets.nginx
+          )
         ),
         _react2.default.createElement(
           'li',
@@ -3336,6 +3341,8 @@ Object.defineProperty(exports, "__esModule", {
 var serverDeps = exports.serverDeps = "sudo apt-get install gnupg libpq-dev build-essential openssl curl git-core nodejs nginx imagemagick";
 
 var gemInstall = exports.gemInstall = "gem update\ngem install bundler\ngem update\n";
+
+var nginx = exports.nginx = "sudo rm /etc/nginx/sites-enabled/default\nsudo ln -nfs /var/www/[APP]/current/config/deploy/nginx/[APP].conf /etc/nginx/sites-enabled/[APP].conf\nsudo service nginx start\n";
 
 /***/ }),
 /* 39 */
@@ -4349,7 +4356,7 @@ exports.default = function (_ref) {
     assets: assets
   });
 
-  app.staticRoutes = ['/', '/build', '/components', '/content', '/deploy', '/integration', '/routing', '/state', '/styles', '/tests'];
+  app.staticRoutes = ['/', '/build', '/components', '/content', '/deploy', '/integration', '/rails', '/routing', '/state', '/styles', '/tests'];
 
   return app;
 };
