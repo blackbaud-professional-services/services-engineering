@@ -22,6 +22,7 @@ export default ({ assets }) => {
     '/content',
     '/deploy',
     '/integration',
+    '/rails',
     '/routing',
     '/state',
     '/styles',

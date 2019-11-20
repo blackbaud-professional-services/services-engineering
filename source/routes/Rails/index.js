@@ -57,7 +57,7 @@ const Rails = () => {
 
         <p>First, install any relevent system dependencies:</p>
 
-        <CodeBlock type='ruby'>{snippets.serverDeps}</CodeBlock>
+        <CodeBlock type='bash'>{snippets.serverDeps}</CodeBlock>
 
         <ul>
           <li><a href='https://github.com/nvm-sh/nvm#install--update-script'>Install NVM/Node</a></li>
@@ -66,11 +66,15 @@ const Rails = () => {
           <li>
             Install bundler:
 
-            <CodeBlock type='ruby'>{snippets.gemInstall}</CodeBlock>
+            <CodeBlock type='bash'>{snippets.gemInstall}</CodeBlock>
           </li>
 
           <li>Create DB <span className='highlight'>RAILS_ENV=production rails db:create</span></li>
-          <li>Setup NGINX</li>
+          <li>
+            Setup NGINX:
+
+            <CodeBlock type='bash'>{snippets.nginx}</CodeBlock>
+          </li>
           <li>Set hostname <span className='highlight'>sudo nano /etc/hostname</span></li>
           <li>Add any useful aliases to the server</li>
           <li>Add any environment-specific config</li>
